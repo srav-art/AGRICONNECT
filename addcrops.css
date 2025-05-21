@@ -1,0 +1,73 @@
+body {
+    background-image: url('bg10.jpg'); /* Replace with your background image */
+    background-size: cover;
+    color: rgb(13, 13, 13);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    margin: 15px 0;
+    color: rgb(246, 242, 242);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: lightgreen;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.back-button {
+    margin-top: 20px;
+    background-color: #f44336; /* Red */
+}
+
+.back-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}

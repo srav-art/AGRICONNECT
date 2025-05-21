@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('bg8.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #040404;
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+/* Dashboard Styling */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dashboard-item {
+    background-color: rgba(31, 29, 29, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.dashboard-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dashboard-item h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.dashboard-item p {
+    font-size: 1rem;
+    color: #f3f2f2;
+}
+
+.dashboard-item:hover {
+    transform: scale(1.05);
+}

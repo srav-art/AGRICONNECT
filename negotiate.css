@@ -1,0 +1,119 @@
+/* General body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg7.jpg'); /* Replace 'bg-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #06f52e;
+}
+
+/* Container for the content */
+.container {
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(24, 23, 23, 0.85); /* Slightly transparent background */
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the title */
+h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 30px;
+    font-size: 28px;
+    padding: 50px;
+}
+
+/* Styling for the crop card */
+.crop-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #0a0a0a;
+    border-radius: 10px;
+    background-color: #0e0d0d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Styling for the crop image */
+.crop-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* Input fields */
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button */
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Back button styling */
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}

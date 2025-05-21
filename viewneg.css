@@ -1,0 +1,68 @@
+body {
+    background-image: url('bg7.jpg'); /* Replace with your background image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Set a default font */
+    color: #faf9f9; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; /* Max width for the content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text inside the container */
+}
+
+h1 {
+    margin-bottom: 20px; /* Margin below the heading */
+    color: #070707;
+}
+
+.crop-card {
+    display: inline-block; /* Cards displayed side by side */
+    width: 30%; /* Width of each card */
+    margin: 15px; /* Margin around each card */
+    padding: 15px; /* Padding inside each card */
+    border: 1px solid #080808; /* Border for cards */
+    border-radius: 5px; /* Rounded corners for cards */
+    text-align: left; /* Align text to the left */
+    background-color: #181818; /* Background color for cards */
+    transition: transform 0.2s; /* Smooth transform on hover */
+}
+
+.crop-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.crop-card img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+
+.crop-card button[name="action"][value="accept"] {
+    background-color: #06ee38;
+}
+
+.crop-card button[name="action"][value="reject"] {
+    background-color: #e41529;
+}
+
+.back-button {
+    margin-top: 20px; /* Margin above the button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007BFF; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,86 @@
+/* Styles for the negotiation request page */
+body {
+    font-family: Arial, sans-serif;
+    background: url('bg6.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #111010;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.crop-card {
+    background-color: #171616;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.crop-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.crop-card p {
+    margin: 10px 0;
+    color: #f9f8f8;
+}
+
+.crop-card form {
+    margin-top: 10px;
+}
+
+.crop-card button {
+    background-color: #28a745;
+    color: rgb(7, 7, 7);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.crop-card button:hover {
+    background-color: #218838;
+}
+
+.crop-card button[name="action"][value="reject"] {
+    background-color: #dc3545;
+}
+
+.crop-card button[name="action"][value="reject"]:hover {
+    background-color: #c82333;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

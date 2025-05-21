@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Crops</title>
+    <link rel="stylesheet" href="browsecrops.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Available Crops</h1>
+            <a href="merchant.html" class="back-button">Back</a>
+        </header>
+
+        <section class="crops-list" id="cropsList">
+            <!-- Crops will be dynamically generated here -->
+        </section>
+    </div>
+
+    <script>
+        // Fetch crops from the database
+        fetch('fetchcrops.php')
+            .then(response => response.json())
+            .then(crops => {
+                const cropsList = document.getElementById('cropsList');
+
+                if (crops.length === 0) {
+                    cropsList.innerHTML = '<p>No crops available</p>';
+                } else {
+                    crops.forEach(crop => {
+                        const cropCard = document.createElement('div');
+                        cropCard.classList.add('crop-card');
+                        cropCard.innerHTML = `
+                            <img src="${crop.image}" alt="${crop.crop_name}">
+                            <h2>${crop.crop_name}</h2>
+                            <p>Type: ${crop.crop_type}</p>
+                            <p>Price: $${crop.price} per ${crop.price_unit}</p>
+                            <p>Available: ${crop.quantity} ${crop.quantity_unit}</p>
+                            <p>Harvest Date: ${crop.harvest_date}</p>
+                            <p>Description: ${crop.description}</p>
+                        `;
+                        cropsList.appendChild(cropCard);
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching crops:', error);
+            });
+    </script>
+</body>
+</html>

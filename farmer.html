@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Dashboard</title>
+    <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, Farmer</h1>
+            <a href="signin.html" class="back-button">Back to Home</a>
+        </header>
+
+        <section class="dashboard">
+            <div class="dashboard-item" onclick="location.href='addcrops1.php'">
+                <img src="add_crops.png" alt="Add Crops">
+                <h2>Add Crops</h2>
+                <p>List your crops for sale.</p>
+            </div>
+
+            <div class="dashboard-item" onclick="location.href='vieworders.php'">
+                <img src="view_orders.png" alt="View Orders">
+                <h2>View Orders</h2>
+                <p>Check orders placed by merchants.</p>
+            </div>
+
+            <div class="dashboard-item" onclick="location.href='negreq.php'">
+                <img src="neg2.jpg" alt="Arrange Delivery">
+                <h2>Negotiate Request</h2>
+                <p>Approve or reject or counter price the negotiation requests.</p>
+            </div>
+
+            <div class="dashboard-item" onclick="location.href='conorder.php'">
+                <img src="confirm.png" alt="Confirm Order">
+                <h2>Confirm Order</h2>
+                <p>Approve or reject received orders.</p>
+            </div>
+
+            <div class="dashboard-item" onclick="location.href='feedback.html'">
+                <img src="feedback.png" alt="Feedback">
+                <h2>View Feedback</h2>
+                <p>See feedback from merchants.</p>
+            </div>
+
+            <div class="dashboard-item" onclick="location.href='history.html'">
+                <img src="history.png" alt="History">
+                <h2>History</h2>
+                <p>Review past orders and transactions.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
